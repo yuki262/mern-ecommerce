@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "./dist/server.js",
   "scripts": {
-    "watch": "tsc -w",
+    "start:watch": "tsc -w",
+    "start:dev": "nodemon dist/index.js",
     "start": "ts-node src/server.ts",
-    "dev": "nodemon dist/index.js"
+    "dev": "npx concurrently npm:start:watch npm:start:dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "yuki262",
+  "type": "module",
   "license": "ISC",
   "description": "",
   "dependencies": {
