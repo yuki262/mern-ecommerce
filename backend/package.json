@@ -4,6 +4,7 @@
   "main": "./dist/server.js",
   "scripts": {
     "watch": "tsc -w",
+    "start": "ts-node src/server.ts",
     "dev": "nodemon dist/index.js"
   },
   "keywords": [],
